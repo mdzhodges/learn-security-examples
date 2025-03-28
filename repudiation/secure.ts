@@ -1,7 +1,8 @@
-import express, { Request, Response, NextFunction } from 'express';
-import bodyParser from 'body-parser';
-import fs from 'fs';
-import path from 'path';
+import * as express from 'express';
+import {NextFunction, Request, Response} from 'express';
+import * as bodyParser from 'body-parser';
+import * as path from 'path';
+import * as fs from "node:fs";
 
 const app = express();
 const port = 3000;

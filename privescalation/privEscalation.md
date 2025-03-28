@@ -41,4 +41,4 @@ admin will be updated to user.
 
 In secure.ts, it is reading the userID's from the session. It will also check if the userID is set
 in the session. If the user has not been loggedIn before, then the update will not work, preventing
-privilege escalation.
+privilege escalation. There is still a potential for a privilege escalation attack due to the hardcoded secret key. 
